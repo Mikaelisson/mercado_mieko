@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-header{
+    margin: 0 2%;
+}
+
+header{
+    padding: 20px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.logo{
+    float: left;
+}
+
+h1 > a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.menu ul{
+    float: right;
+    list-style: none;
+}
+
+.menu ul li{
+    float: left;
+    padding: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    padding: 12px;
+    background-color: rgb(190, 43, 43);
+    border-radius: 30px;
+}
+
+.menu ul li a:hover{    
+    background-color: rgb(165, 0, 0);
+}
+
+/*content*/
+
+.banner{
+    position: relative;
+    height: 500px;
+    background-image: url('https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+}
+
+.p1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    text-align: center;
+}
+
+mark{
+    background-color: rgba(255, 255, 255, 0.521);
+}
+mark > strong{
+    background-color: #ff0000cc;
+}
+
+p > a{
+    text-decoration: none;
+    color: white;
+    padding: 23px;
+    font-size: 2.5rem;
+    border-radius: 40px;
+    background-color: #ff0000;
+    border: rgba(0, 0, 0, 0.479) solid 2px;
+    text-shadow: black 3px 3px 10px;
+}
+p > a:hover{
+    font-size: 2.8rem;
+    transition: 0.5s;
+}
+
+/*content section 2*/
+
+.content{
+    padding: 40px;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.content h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p{
+    text-align: justify;
+}
+
+.product-principal{
+    text-align: center;
+}
+
+.products, .products1, .products2{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px 50px;
+    border-radius: 20px;
+}
+
+.products{
+    background-image: url('https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.products1{
+    background-image: url('https://images.pexels.com/photos/264537/pexels-photo-264537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.products2{
+    background-image: url('https://images.pexels.com/photos/4621/fruits-grocery-bananas-market.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.products-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.products-content > p{
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.products-content > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    background-color: deepskyblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.products-content > a:hover{
+    font-size: 1.1rem;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+.credits{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 700px) {
+    
+    .container-header{
+        margin: 0;
+    }
+    .logo{
+        text-align: center;
+        float: none;
+    }
+    
+    .menu ul{
+        text-align: center;
+        float: none;
+    }
+    
+    .menu ul li{
+        float: none;
+        margin-top: 10px;
+    }
+    
+    .menu ul li a{
+        margin-left: 0;
+        padding: 20px 100px;
+    }
+    
+    /*content*/
+    
+    .p1{
+        font-size: 3.5rem;
+    }
+    
+    p > a{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    p > a:hover{
+        font-size: 1.8rem;
+    }
+}
